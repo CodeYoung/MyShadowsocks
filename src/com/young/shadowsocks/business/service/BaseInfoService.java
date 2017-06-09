@@ -3,7 +3,6 @@
  */
 package com.young.shadowsocks.business.service;
 
-
 import com.young.shadowsocks.entity.UserInfo;
 
 /**
@@ -12,6 +11,14 @@ import com.young.shadowsocks.entity.UserInfo;
  */
 public interface BaseInfoService {
 
-	public UserInfo getUserInfo(String userCode);
+	public UserInfo getUserInfo(String code);
+	
+	 
+
+	public void insertUserInfo(UserInfo info);
+
+
+
+	public void deleteUserInfo(UserInfo info);
 
 }
